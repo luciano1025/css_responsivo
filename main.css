@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(187, 187, 162);
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 25px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+#faixada {
+    margin: 5px 15px 30px 20px;
+    width: 50%;
+    height: 450px;
+    display: flex;
+
+}
+
+.lorem_flex {
+    margin-top: 20px;
+    display: flex;
+    height: auto; /* Altura automática para manter a proporção */
+    margin-right: 10px; /* Adicionar margem à direita da imagem */
+    align-items: center;
+    text-indent: 20px;
+}
+
+#text {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:20px 0 60px 0;
+}
+
+article {
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #fffcfc;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+del {
+    color: dimgray;
+}
+
+.preco {
+    background-color: black;
+    color: aliceblue;
+}
+
+.cor_preco {
+    color: yellow;
+    background-color: black;
+}
+
+details {
+    cursor: pointer;
+}
+
+details:hover {
+    background-color: chartreuse;
+    border-radius: 0px 0px 20px 20px;
+}
+
+button {
+    margin: 15px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: darkslategrey;
+    color: #fffcfc;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    bottom: 5px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    #faixada {
+        width:93%;
+        height: 300px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .lorem_flex {
+        display: block;
+        height: auto; /* Altura automática para manter a proporção */
+        margin-right: 10px; /* Adicionar margem à direita da imagem */
+        align-items: center;
+    }
+
+
+
+    article {
+        width: calc(100% - 20px);
+    }
+
+    footer{
+        position: relative;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+    #faixada {
+        width:95%;
+    }
+
+    .lorem_flex {
+        display: block;
+
+        align-items: center;
+    }
+
+    #text {
+        margin-left: 20px;
+    }
+
+    article {
+        width: calc(50% - 20px);
+    }
+
+    footer{
+        position: relative;
+        text-align: center;
+        display: block;
+    }
+}
